@@ -1,34 +1,21 @@
-## Usage
+# 使用方法
+- 先找到index.html，编辑里面的api: "填入你alist原本的网址"（注意不要漏了引号）
+- 然后在CloudFlare Pages里导入这个项目，填入下方构建命令：
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
-
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
-
-```bash
-$ npm install # or pnpm install or yarn install
+```
+npm run build
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+- 构建输出目录：/dist 
+- 根目录不要填！
 
-## Available Scripts
 
-In the project directory, you can run:
+# 目前效果
 
-### `npm dev` or `npm start`
+内容基本可以正常显示，但以下内容需要注意：
+- 设置里全局的head body无效，需要在index.html里预先编辑
+且以下内容暂时未解决：
+- 语言默认为英文没有中文（好像需要导入一个语言包，暂时还没弄）
+- logo和标题不生效（暂时没弄）
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+### 欢迎大佬们批评指正！
