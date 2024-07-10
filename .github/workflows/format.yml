@@ -10,9 +10,6 @@ jobs:
 
     permissions:
       contents: write
-    runs:
-  using: 'node20'
-  main: 'main.js'
 
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +17,8 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
       - name: Install dependencies
         run: pnpm install
