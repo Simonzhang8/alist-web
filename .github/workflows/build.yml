@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Simonzhang8/alist-web-zxm
-          ref: dev
+          ref: main
           path: web-dist
           persist-credentials: false
           fetch-depth: 0
@@ -70,7 +70,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.MY_TOKEN }}
-          branch: dev
+          branch: main
           directory: web-dist
           repository: Simonzhang8/alist-web-zxm
           force: true
