@@ -77,7 +77,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.MY_TOKEN }}
-          branch: main
+          branch: release
           directory: web-dist
           repository: Simonzhang8/alist-web-zxm
 
