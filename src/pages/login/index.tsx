@@ -186,7 +186,7 @@ const Login = () => {
         spacing="$4"
       >
         <Flex alignItems="center" justifyContent="space-around">
-          <Image w="150px" h="100px" src={logo()} />
+          <Image w="200px" h="50px" src={logo()} />
           <Heading color="$info9" fontSize="$2xl">
             {title()}
           </Heading>
