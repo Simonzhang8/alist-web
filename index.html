@@ -64,6 +64,44 @@ var _hmt = _hmt || [];
       }
       window.__dynamic_base__ = window.ALIST.cdn || ""
     </script>
+    <style>
+	.tp-qrcode{
+		width: 130px;
+		height: 200px;
+		padding: 5px;
+		box-sizing: border-box;
+		position: fixed;
+		top: 30%;
+		right: 20px;
+		z-index: 10;
+		background: #ffffff;
+		border-radius: 6px;
+		box-shadow: 0 0 4px rgba(0,0,0,.35);
+		text-align: center;
+		transition: all .3s;
+		cursor: pointer;
+	}
+	.tp-qrcode:hover{
+		top: 28%;
+		transition: all .4s;
+		box-shadow: 0 0 7px rgba(0,0,0,.6);
+		font-weight: bold;
+	}
+	.tp-qrcode span{
+		color: #a33636;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	@media screen and (max-width: 1198px){
+		.tp-qrcode{
+			display: none;
+		}
+	}
+	#qrcode{
+		width: 128px;
+		height: 128px;
+	}
+</style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -76,5 +114,8 @@ var _hmt = _hmt || [];
 <a class="hope-anchor hope-c-iHuheP hope-c-PJLV hope-c-PJLV-idrWMwW-css" target="_blank" rel="noopener noreferrer" href="https://www.zxm86.cn/">张先淼的个人网站</a><span>|</span><a class="hope-anchor hope-c-iHuheP hope-c-PJLV hope-c-PJLV-idrWMwW-css" target="_blank" rel="noopener noreferrer" href="https://portal.zxm86.cn/">张先淼的网址导航</a><span>|</span><a class="hope-anchor hope-c-iHuheP hope-c-PJLV hope-c-PJLV-idrWMwW-css" target="_blank" rel="noopener noreferrer" href="https://al.zxm86.cn/">本站仅供国外访问，国内访问请点我</a>
 </div>
 </center>
+    <div class="tp-qrcode" id="qrcode">
+	<span>手机扫码访问</span>
+</div>
   </body>
 </html>
